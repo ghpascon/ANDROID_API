@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="card">
+    <h1>{{ title }}</h1>
+    <ul>
+      {% for item in items %}
+        <li><code><a href="{{ item.path }}">{{ item.label }}</a></code></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+from pydantic_settings import BaseSettings
+
+
+class Settings(BaseSettings):
+    app_name: str = "ANDROID_API"
+    host: str = "127.0.0.1"
+    port: int = 8000
+
+
+settings = Settings()

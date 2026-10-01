@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="card">
+    <h1>{{ title }}</h1>
+    <p>{{ message }}</p>
+    <p>Estrutura pronta para expandir com novas rotas com pouco código.</p>
+    <ul>
+      <li><a href="/api">Abrir página da API</a></li>
+      <li><a href="/docs-page">Ver documentação customizada</a></li>
+      <li><a href="/docs">Abrir documentação automática do FastAPI</a></li>
+    </ul>
+  </div>
+{% endblock %}
